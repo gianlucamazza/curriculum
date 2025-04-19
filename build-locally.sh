@@ -9,7 +9,8 @@ fi
 
 # Run the GitHub Actions workflow locally
 echo "Running GitHub Actions workflow locally with act..."
-act -j build_latex --env ACT=true
+echo "Using linux/amd64 architecture for container compatibility with Apple M-series chip..."
+act -j build_latex --env ACT=true --container-architecture linux/amd64
 
 # Check if the PDF was generated
 if [ -f "artifacts/cv.pdf" ]; then
