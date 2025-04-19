@@ -34,14 +34,25 @@ jobs:
             tabularx
             multicol
 
+      # This action is replaced with a shell command for act compatibility
+      - name: Save PDF locally (for act)
+        if: ${{ env.ACT }}
+        run: |
+          mkdir -p artifacts
+          cp cv.pdf artifacts/
+          echo "PDF saved to artifacts/cv.pdf"
+          
+      # Only run this in GitHub Actions, not in act
       - name: Upload PDF as artifact
+        if: ${{ !env.ACT }}
         uses: actions/upload-artifact@v3
         with:
           name: cv
           path: cv.pdf
           
+      # Only run this in GitHub Actions for releases, not in act
       - name: Upload PDF to release
-        if: github.event_name == 'release'
+        if: ${{ github.event_name == 'release' && !env.ACT }}
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
