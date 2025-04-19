@@ -1,0 +1,19 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.dvi
+*.out
+
+# Build files (let GitHub Actions handle these)
+*.pdf
+
+# System specific files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/ 

@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in Latex
+% Author: Gianluca Mazza
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-2pt}\scshape\bfseries\normalsize
+}{}{0em}{}[\color{black}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge GIANLUCA MAZZA} \\
+    \vspace{3pt}
+    Brescia, Lombardy, Italy \\
+    \vspace{1pt}
+    \small (+39) 3338682761 $|$ \href{mailto:info@gianlucamazza.it}{info@gianlucamazza.it} $|$ 
+    \href{https://linkedin.com/in/gianlucamazza}{\faLinkedin\ LinkedIn} $|$
+    \href{https://github.com/gianlucamazza}{\faGithub\ GitHub} $|$
+    \href{https://gianlucamazza.it}{\faGlobe\ Website}
+\end{center}
+
+%----------PROFESSIONAL SUMMARY----------
+\section{PROFESSIONAL SUMMARY}
+Technology leader with 10+ years of experience specializing in blockchain technologies, artificial intelligence, and innovative software solutions. As Co-Founder and CTO, I drive technological strategy while managing high-performing development teams. My expertise spans blockchain architecture, AI model development (with focus on LSTMs and LLMs), cryptocurrency systems, and cloud applications. I combine technical excellence with strategic vision to deliver cutting-edge solutions that create business value. Passionate about exploring the intersection of financial technology and artificial intelligence to create predictive models and automated trading systems.
+
+%----------CORE COMPETENCIES----------
+\section{CORE COMPETENCIES}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*]
+    \item Blockchain \& Bitcoin Development
+    \item Artificial Intelligence \& Machine Learning
+    \item LSTM Neural Networks \& Time Series Analysis
+    \item LLM Integration \& Application Development
+    \item Web3 \& DeFi Technologies
+    \item Technical Team Leadership \& Mentoring
+    \item Cloud Architecture \& Infrastructure
+    \item Python, JavaScript, Node.js Development
+\end{itemize}
+\end{multicols}
+
+%----------EXPERIENCE----------
+\section{PROFESSIONAL EXPERIENCE}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Venere Labs}{October 2024 - Present}
+{Co-Founder}{Brescia, Italy}
+\resumeItemListStart
+\resumeItem{Leading technology strategy and implementation, focusing on AI-enhanced blockchain solutions}
+\resumeItem{Developing innovative applications leveraging LLMs and Web3 technologies}
+\resumeItem{Creating the MCP Python Toolbox, an open-source framework for AI assistants to interact with Python code}
+\resumeItem{Building cross-functional teams and establishing robust technological infrastructure}
+\resumeItem{Designing machine learning pipelines for financial time series prediction}
+\resumeItemListEnd
+
+\resumeSubheading
+{Scaling Parrots}{May 2020 - Present}
+{Co-Founder/Chief Technology Officer}{Brescia, Italy}
+\resumeItemListStart
+\resumeItem{Architected and implemented AI-driven blockchain applications for financial technology solutions}
+\resumeItem{Directed overall technological vision and roadmap, successfully aligning with business objectives}
+\resumeItem{Designed and developed LSTM-based financial prediction models for market analysis}
+\resumeItem{Managed and mentored a high-performing team of developers specializing in AI and blockchain}
+\resumeItem{Led the development of multiple machine learning projects focused on predictive analytics}
+\resumeItem{Established technical standards and best practices for AI model development and deployment}
+\resumeItemListEnd
+
+\resumeSubheading
+{Bizonweb}{November 2019 - April 2020}
+{Senior Software Developer}{Brescia, Lombardy, Italy}
+\resumeItemListStart
+\resumeItem{Developed custom software solutions using Node.js, JavaScript, and HTML5}
+\resumeItem{Created responsive and intuitive web applications for various business requirements}
+\resumeItem{Implemented efficient coding practices and technical documentation standards}
+\resumeItemListEnd
+
+\resumeSubheading
+{Eidoo}{2018 - September 2019}
+{Bitcoin \& Liquid Architect}{Ticino, Switzerland}
+\resumeItemListStart
+\resumeItem{Architected and implemented core functionalities for the Eidoo Bitcoin wallet}
+\resumeItem{Applied machine learning techniques to enhance security and transaction analysis}
+\resumeItem{Developed secure cryptographic solutions for private key management}
+\resumeItem{Integrated Liquid Network capabilities, enabling advanced asset functionalities}
+\resumeItem{Led R\&D activities exploring AI applications in cryptocurrency wallets}
+\resumeItemListEnd
+
+\resumeSubheading
+{0301 Mining Farm}{August 2017 - May 2019}
+{Technical Operations Lead and Co-Founder}{Sofia, Bulgaria}
+\resumeItemListStart
+\resumeItem{Established and managed cryptocurrency mining operations from concept to profitable enterprise}
+\resumeItem{Designed custom software solutions using machine learning for mining optimization}
+\resumeItem{Implemented predictive maintenance systems using LSTM neural networks}
+\resumeItem{Developed advanced data analytics pipelines to maximize mining efficiency}
+\resumeItemListEnd
+
+\resumeSubheading
+{BHB - Blockchainlab}{January 2017 - January 2019}
+{Senior Software Developer}{Milano, Italia}
+\resumeItemListStart
+\resumeItem{Designed and developed Bitcoin and blockchain software solutions for financial institutions}
+\resumeItem{Created AI-powered proof-of-concepts demonstrating innovative approaches to financial problems}
+\resumeItem{Developed trading algorithms using machine learning techniques for market prediction}
+\resumeItem{Implemented security protocols for financial companies using advanced cryptographic methods}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------PROJECTS----------
+\section{RESEARCH \& PROJECTS}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Financial Time Series Prediction Using LSTM}}{
+  \href{https://github.com/gianlucamazza/FTSP-keras}{\faGithub\ GitHub}}
+\resumeItemListStart
+\resumeItem{Developed LSTM neural network models for financial market prediction}
+\resumeItem{Implemented data preprocessing pipelines for time series analysis}
+\resumeItem{Created feature engineering techniques specific to financial markets}
+\resumeItem{Published research findings on predictive model performance}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{MCP Python Toolbox}}{
+  \href{https://github.com/gianlucamazza/mcp_python_toolbox}{\faGithub\ GitHub}}
+\resumeItemListStart
+\resumeItem{Created an open-source Model Context Protocol server enabling AI assistants to work with Python}
+\resumeItem{Designed modular architecture for file operations, code analysis, and execution}
+\resumeItem{Implemented standardized interfaces for AI assistant integration}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------EDUCATION----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Università degli Studi di Milano-Bicocca}{2009 - 2013}
+{Facoltà di scienze matematiche, fisiche e naturali, Informatica}{}
+
+\resumeSubheading
+{Continuous Professional Development}{}
+{}{} 
+\resumeItemListStart
+\resumeItem{Deep Learning Specialization, Coursera}
+\resumeItem{Advanced Machine Learning with TensorFlow}
+\resumeItem{Financial Engineering and Risk Management}
+\resumeItem{Blockchain Developer Certification}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------SKILLS----------
+\section{TECHNICAL SKILLS}
+\resumeItemListStart
+\resumeItem{\textbf{AI \& Machine Learning:} LSTM Networks, Keras, TensorFlow, PyTorch, Time Series Analysis, LLMs}
+\resumeItem{\textbf{Programming Languages:} Python, JavaScript, Node.js, HTML5, Solidity}
+\resumeItem{\textbf{Blockchain Technologies:} Bitcoin, Web3, Ethereum, Liquid, Smart Contracts}
+\resumeItem{\textbf{Frameworks \& Libraries:} AngularJS, React, Express.js, NumPy, Pandas, Scikit-learn}
+\resumeItem{\textbf{Cloud \& Infrastructure:} AWS, Microsoft Azure, Docker, Kubernetes}
+\resumeItem{\textbf{Development Tools:} Git, CI/CD, Jupyter Notebooks, Visual Studio, RESTful APIs}
+\resumeItemListEnd
+
+%----------LANGUAGES----------
+\section{LANGUAGES}
+\resumeItemListStart
+\resumeItem{\textbf{Italian:} Native}
+\resumeItem{\textbf{English:} Professional Working Proficiency}
+\resumeItemListEnd
+
+\end{document} 

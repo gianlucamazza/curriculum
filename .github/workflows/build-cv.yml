@@ -1,0 +1,51 @@
+name: Build CV
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.tex'
+      - '.github/workflows/build-cv.yml'
+  pull_request:
+    branches: [ main ]
+  release:
+    types: [ created ]
+  workflow_dispatch:
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: cv.tex
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+          extra_packages: |
+            fontawesome5
+            enumitem
+            titlesec
+            latexsym
+            marvosym
+            babel
+            tabularx
+            multicol
+
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: cv
+          path: cv.pdf
+          
+      - name: Upload PDF to release
+        if: github.event_name == 'release'
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: cv.pdf
+          asset_name: gianluca-mazza-cv.pdf
+          tag: ${{ github.ref }}
+          overwrite: true 
