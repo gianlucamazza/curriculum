@@ -11,13 +11,21 @@ fi
 # Create output directory
 mkdir -p output
 
-# Build the CV using a LaTeX Docker image
-# Using thomasweise/texlive which has good ARM64 support
+# Get the absolute path
+CURRENT_DIR=$(pwd)
+
+echo "Current directory: $CURRENT_DIR"
+echo "Files in directory:"
+ls -la
+
+# Try with a different LaTeX image with ARM64 support
+echo "Using ARM64-compatible Docker image..."
 docker run --rm \
-  -v "$(pwd):/data" \
-  -w /data \
-  thomasweise/texlive \
-  /bin/sh -c "pdflatex -interaction=nonstopmode cv.tex && pdflatex -interaction=nonstopmode cv.tex"
+  --platform linux/arm64 \
+  -v "$CURRENT_DIR:/workdir" \
+  -w /workdir \
+  ghcr.io/xu-cheng/texlive-full:latest \
+  bash -c "ls -la && pdflatex -interaction=nonstopmode cv.tex && pdflatex -interaction=nonstopmode cv.tex"
 
 # Check if the PDF was generated
 if [ -f "cv.pdf" ]; then
