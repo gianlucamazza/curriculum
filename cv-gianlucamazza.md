@@ -2,7 +2,7 @@
 
 **Co-Founder/CTO @ Scaling Parrots & Venere Labs | Blockchain & AI Expert**  
 Brescia, Lombardy, Italy  
-(+39)3338682761 | <info@gianlucamazza.it> | [LinkedIn](https://www.linkedin.com/in/gianlucamazza) | [GitHub](https://github.com/gianlucamazza) | [Website](https://gianlucamazza.it)
+<info@gianlucamazza.it> | [LinkedIn](https://www.linkedin.com/in/gianlucamazza) | [GitHub](https://github.com/gianlucamazza) | [Website](https://gianlucamazza.it)
 
 ## PROFESSIONAL SUMMARY
 
